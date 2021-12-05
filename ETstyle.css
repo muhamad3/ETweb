@@ -180,19 +180,6 @@
     background: green;
     color: navajowhite;
   }
-  .grid-item:hover{
-      animation: ani 2s 0s linear infinite both;
-    
-  } 
-   @keyframes ani {
-          10%{
-             transform:  translateY(-1%);
-          }
-          50%{
-            background-color: rgb(4, 82, 38);
-          }
-
-    }
   .grid-item{
    width: 220px;
    height: 300px;
@@ -205,3 +192,14 @@
     border-radius: 40px;
     text-align: center;
     }
+     .grid-item:hover{
+      animation: ani 2s 0s linear infinite both;
+    
+  } 
+  @keyframes ani {
+    10%{
+       transform:  translateY(-1%);
+    }
+    50%{
+      background-color: rgb(4, 82, 38);
+    }}
