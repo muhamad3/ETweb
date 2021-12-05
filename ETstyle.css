@@ -231,4 +231,15 @@
     background: green;
     color: navajowhite;
   }
-  
+  .game1:hover{
+      animation: ani 2s 0s linear infinite both;
+    
+  } 
+   @keyframes ani {
+          10%{
+             transform:  translateY(-2%);
+          }
+    
+      
+
+    }
