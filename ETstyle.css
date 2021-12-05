@@ -243,3 +243,14 @@
       
 
     }
+  .grid-item{
+   width: 220px;
+   height: 400px;
+   background-color: seagreen;
+    display: inline-grid;
+    margin-left: 60px;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 40px;
+    text-align: center;
+    }
