@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gamesforsale</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+
+  </head>
+  
 <body>
+
 <b>
     <em>
-    <link rel="stylesheet" href="ETstyle.css">
+    <link rel="stylesheet" href="trailers.css">
     <div class="header">
         <div class="title">
       HPS store
     </div>
     <div class="cats">
-        <div class="homepage"> <a href="ETweb.html"> home page</a></div> 
-        <div class="cheapgames"> <a href=""> games under 10$ </a></div> 
-        <div class="egames"> <a href="">exclusive games</a> </div> 
-        <div class="mgames"> <a href="">multiplayer games</a>  </div>
-        <div class="trailler"> <a href="trailers.html"> game trailers</a> </div>
-        <div class="sgames"> <a href=""> strategy games</a> </div>
-        <div class="secondhand"> <a href="secondhand.html"> second hand consoles</a></div>
-
-    </div>
+      <ol class="container">
+          <li  id="first" class="listi" ><a href=""> home page</a></li>
+          <li id="second" class="listi"> <a href=""> games under 10$ </a></li>
+          <li id="third" class="listi"> <a href="">exclusive games</a> </li>
+          <li id="fourth" class="listi"><a href="">multiplayer games</a>  </li>
+          <li id="fifth" class="listi" style="background-color: var(--a);"> <a href="trailers.html"> game trailers <br></a></li>
+          <li id="sixth" class="listi"> <a href=""> strategy games</a> </li>
+          <li id="seventh" class="listi"> <a href="secondhand.html"> second hand consoles</a></li>
+      </ol>
+      </div>
     </div>
     </em></b>
     <div class="reco">
@@ -33,51 +37,54 @@
    <a href=""> <img id="3" class="pics" src="game3.jpg" alt=""></a>
    <a href=""><img id="4" class="pics" src="game4.jpg" alt=""></a> 
     </div>
-    <div class="content">
-    <div  class="game1"> <video width="225" height="225" controls>
-      <source src="callofduty.mp4" type="video/mp4">
-    </video> <br> name:call of duty &nbsp; &nbsp;  &nbsp;price:60$
-         <br>  console:all &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-         <button onclick="a()">BUY</button>
+   
+    <div class="grid-container">
+      <div class="grid-item"> <video width="225" height="225" controls>
+        <source src="callofduty.mp4" type="video/mp4">
+      </video> <br> name:call of duty &nbsp; &nbsp;  &nbsp;price:60$
+           <br>  console:all &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;    made by:EA <br>
+           <button onclick="a()">BUY</button></div>
+      <div class="grid-item"><video width="225" height="225" controls>
+        <source src="battlefield.mp4" type="video/mp4">
+      </video> <br> name:battlefield &nbsp; &nbsp;  &nbsp; price:60$
+          <br> console:all &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; made by:EA <br>
+          <button onclick="a()">BUY</button>
         </div>
-    <div class="game2"> <video width="225" height="225" controls>
-      <source src="battlefield.mp4" type="video/mp4">
-    </video> <br> name:battlefield &nbsp; &nbsp;  &nbsp; price:60$
-        <br> console:all &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; made by:EA <br>
-        <button onclick="a()">BUY</button></div>
-    <div class="game3"><video width="225" height="225" controls>
-      <source src="doom.mp4" type="video/mp4">
-    </video> <br> name:doom &nbsp; &nbsp;&nbsp;price:free
-        <br>console:computer  &nbsp; &nbsp;  &nbsp;made by:valve <br>
-        <button onclick="a()">BUY</button></div>
-    <div class="game4"> <video width="225" height="225" controls>
-      <source src="watchdogs.mp4" type="video/mp4">
-    </video> <br> name:watchdogs &nbsp; &nbsp;&nbsp;
-        price:free  <br> console:all &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; made by:EA <br>
-        <button onclick="a()">BUY</button></div>
-</div>
-<div class="content">
-    <div class="game1"> <video width="225" height="225" controls>
-      <source src="godofwar.mp4" type="video/mp4">
-    </video> <br> name:godwar &nbsp; &nbsp;  &nbsp;price:60$
-         <br>  console:computer &nbsp;  &nbsp;  &nbsp;   made by:SA <br>
-         <button onclick="a()">BUY</button></div>
-    <div class="game2"> <video width="225" height="225" controls>
-      <source src="medalofhonor.mp4" type="video/mp4">
-    </video> <br> name:medal of honor &nbsp; &nbsp;  &nbsp; price:60$
-        <br> console:warzone &nbsp; &nbsp;made by:activion <br>
-        <button onclick="a()">BUY</button></div>
-    <div class="game3"><video width="225" height="225" controls>
-      <source src="spiderman.mp4" type="video/mp4">
-    </video>  <br> name:spiderman &nbsp; &nbsp;&nbsp;price:60$
-        <br>console:all  &nbsp; &nbsp;  &nbsp;made by:blizard <br>
-        <button onclick="a()">BUY</button></div>
-    <div class="game4"> <video width="225" height="225" controls>
-      <source src="zerodown.mp4" type="video/mp4">
-    </video> <br> name:zero down &nbsp; &nbsp;&nbsp;
-        price:45$  <br> console:all &nbsp; &nbsp;  &nbsp; made by blizzard<br>
-        <button onclick="a()">BUY</button></div>
-</div>
+      <div class="grid-item"><video width="225" height="225" controls>
+        <source src="doom.mp4" type="video/mp4">
+      </video> <br> name:doom &nbsp; &nbsp;&nbsp;price:free
+          <br>console:computer   &nbsp;made by:valve <br>
+          <button onclick="a()">BUY</button>
+        </div>
+      <div class="grid-item"> <video width="225" height="225" controls>
+        <source src="watchdogs.mp4" type="video/mp4">
+      </video> <br> name:watchdogs &nbsp; &nbsp;&nbsp;
+          price:free  <br> console:all &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; made by:EA <br>
+          <button onclick="a()">BUY</button>
+        </div>
+      <div class="grid-item"> <video width="225" height="225" controls>
+        <source src="godofwar.mp4" type="video/mp4">
+      </video> <br> name:godwar &nbsp; &nbsp;  &nbsp;price:60$
+           <br>  console:computer &nbsp;  &nbsp;  &nbsp;   made by:SA <br>
+           <button onclick="a()">BUY</button>
+          </div>
+      <div class="grid-item">  <video width="225" height="225" controls>
+        <source src="medalofhonor.mp4" type="video/mp4">
+      </video> <br> name:medal of honor  price:60$
+          <br> console:warzone made by:activion <br>
+          <button onclick="a()">BUY</button></div>
+      <div class="grid-item"> <video width="225" height="225" controls>
+        <source src="spiderman.mp4" type="video/mp4">
+      </video>  <br> name:spiderman &nbsp; &nbsp;&nbsp;price:60$
+          <br>console:all  &nbsp; &nbsp;  &nbsp;made by:ps <br>
+          <button onclick="a()">BUY</button>
+        </div>
+      <div class="grid-item"> <video width="225" height="225" controls>
+        <source src="zerodown.mp4" type="video/mp4">
+      </video> <br> name:zero down &nbsp; &nbsp;&nbsp;
+          price:45$  <br> console:all &nbsp; &nbsp;  &nbsp; made by blizzard<br>
+          <button onclick="a()">BUY</button></div>
+          </div>
 <footer class="footer">
 
 <pre>                  contact us by :          <a href="#" class="fa fa-instagram"></a> instagram:gmaes_forsale        <a href="#" class="fa fa-facebook"> </a> facebook:gamesforsale
