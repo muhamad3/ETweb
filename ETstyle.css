@@ -17,19 +17,8 @@
     text-align: center;
 }
 
-.listi:not(#first){
-    display: block ;
-    width: 100px;
-    height: 40px;
-    background-color: var(--color);
-}
-.listi:not(#first):hover{
-    background-color: seagreen;
-    --a:rgb(0, 66, 61); 
-}
 #first{
     margin-left: 320px;
-    background-color:var(--a);
 }
 .container .listi:hover{
     --a:seagreen; 
