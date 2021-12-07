@@ -7,19 +7,28 @@
     <title>gamesforsale</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    .listi:not(#first):hover{
+    .listi:not(#third):hover{
     background-color: seagreen;
     --a:rgb(0, 66, 61); }
-.listi:not(#first){
+.listi:not(#third){
     display: block ;
     width: 100px;
     height: 40px;
     background-color: var(--color);
     --a:var(--color);
 }
-    #first{
+    #third{
         background-color: var(--a);
     }
+    table,td,tr{
+        border: seagreen 1px solid ;
+        width: 1400px;
+        margin-left: 40px;
+        text-align: center  ;
+        margin-top: 20px;
+        height: 40px;
+    }
+    td:hover {background-color: seagreen;}
 </style>
 </head>
 <body>
@@ -34,7 +43,7 @@
     <ol class="container">
         <li  id="first" class="listi" ><a href="ETweb.html"> home page</a></li>
         <li id="second" class="listi"> <a href=""> games under 10$ </a></li>
-        <li id="third" class="listi"> <a href="ex.html">exclusive games</a> </li>
+        <li id="third" class="listi"> <a href="">exclusive games</a> </li>
         <li id="fourth" class="listi"><a href="">multiplayer games</a>  </li>
         <li id="fifth" class="listi"> <a href="trailers.html"> game trailers <br></a></li>
         <li id="sixth" class="listi"> <a href=""> strategy games</a> </li>
@@ -50,32 +59,53 @@
    <a href=""> <img id="3" class="pics" src="game3.jpg" alt=""></a>
    <a href=""><img id="4" class="pics" src="game4.jpg" alt=""></a> 
     </div>
-    <div class="grid-container">
-        <div class="grid-item"> <img  src="game10.jpg"> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-        <div class="grid-item"> <img  src="game5.jpg"> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-        <div class="grid-item"> <img  src="game9.jpg"> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-        <div class="grid-item"> <img  src="game7.jpg"> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-        <div class="grid-item"> <img  src="game8.jpg"> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-        <div class="grid-item"> <img  src="game6.jpg"> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-        <div class="grid-item"> <img  src="game12.jpg"> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-        <div class="grid-item"> <img  src="game11.jpg   "> <br> name:apex &nbsp; &nbsp;  &nbsp;price:free
-            <br>  console:all &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-            <button onclick="a()">BUY</button></div>
-            </div>
+    <table>
+        <tr>
+          <th>console</th>
+          <th colspan="2">games</th>
+          <th>studios</th>
+        </tr>
+        <tr>
+          <td rowspan="3">playstaion</td>
+          <td colspan="2">godofwar4</td>
+
+          <td>santa monica</td>
+        </tr>
+        <tr>
+          <td colspan="2">uncharted 4 a thef's end</td>
+
+          <td>naughty Dog</td>
+        </tr>
+        <tr>
+            <td colspan="2">last of us 2</td>
+            <td>naughty Dog</td>
+          </tr>
+          <tr>
+            <td rowspan="3">xbox</td>
+            <td colspan="2">halo infinite</td>
+
+            <td>xbox games studios</td>
+          </tr>
+          <tr>
+            <td colspan="2">froza horizon</td>
+            <td> playground games</td>
+         
+          </tr>
+          <tr>
+            <td colspan="2">gears of war</td>
+            <td>xbox games studios</td>
+          </tr>
+          <tr>
+            <td rowspan="2">nintendo</td>
+            <td colspan="2">super mario</td>
+            <td rowspan="2">nintendo studios</td>
+          </tr>
+          <tr>
+            <td >super mario brothers</td>
+           
+          </tr>
+          
+      </table>
 <footer class="footer">
 
 <pre>                  contact us by :          <a href="#" class="fa fa-instagram"></a> instagram:gmaes_forsale        <a href="#" class="fa fa-facebook"> </a> facebook:gamesforsale
