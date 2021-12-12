@@ -11,14 +11,14 @@
 .container .listi{
     display: block;
     float: left;
-    margin-right: 20px;
+    margin-right:   0px;
     width: 100px;
     height: 40px;
     text-align: center;
 }
 
 #first{
-    margin-left: 320px;
+    margin-left: 360px;
 }
 .container .listi:hover{
     --a:seagreen; 
@@ -95,6 +95,42 @@
         width: 220px;
         margin-top: 10px;
         border-radius: 35px;
+    }
+    .dropbtn{
+        background-color: var(--color);
+        color: white;
+        width: 100px;
+        height: 40px;
+        margin-top: 0;
+        font-size:  16px;
+        font: bolder;
+        border-radius: 0%;
+        border: none;
+    }
+    #second{
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        right: 0px;
+        background-color: var(--color);
+        min-width: 100px;
+        font-size: 16px;
+    }
+    .dropdown-content a{
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: seagreen;}
+    .dropbtn:hover .dropdown-content{
+        display: block;
+    }
+    #second:hover .dropdown-content{
+        display: block;
     }
     button:hover{
         background-color:seagreen ;

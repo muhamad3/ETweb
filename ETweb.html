@@ -10,6 +10,8 @@
     .listi:not(#first):hover{
     background-color: seagreen;
     --a:rgb(0, 66, 61); }
+    .listi:not(#first):hover .dropbtn{
+    background-color: seagreen;}
 .listi:not(#first){
     display: block ;
     width: 100px;
@@ -33,7 +35,13 @@
     <div class="cats">
     <ol class="container">
         <li  id="first" class="listi" ><a href="ETweb.html"> home page</a></li>
-        <li id="second" class="listi"> <a href=""> games under 10$ </a></li>
+        <li id="second" class="listi"> <a class="dropbtn"> cheap games</a>
+        <div class="dropdown-content"> 
+            <a href="">free games</a>
+            <a href="">games under 5$</a>
+            <a href="">games under 10$</a>
+        </div>
+        </li>
         <li id="third" class="listi"> <a href="ex.html">exclusive games</a> </li>
         <li id="fourth" class="listi"><a href="">multiplayer games</a>  </li>
         <li id="fifth" class="listi"> <a href="trailers.html"> game trailers <br></a></li>
