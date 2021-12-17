@@ -7,14 +7,18 @@
     <title>gamesforsale</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-          .listi:not(#fifth):hover{
+    .listi:not(#fifth):hover{
     background-color: seagreen;
     --a:rgb(0, 66, 61); }
+    .listi:not(#fifth):hover .dropbtn{
+    background-color: seagreen;}
 .listi:not(#fifth){
     display: block ;
     width: 100px;
     height: 40px;
-    background-color: var(--color);}
+    background-color: var(--color);
+    --a:var(--color);
+}
     #fifth{
         background-color: var(--a);
     }
@@ -33,11 +37,17 @@
     <div class="cats">
       <ol class="container">
           <li  id="first" class="listi" ><a href="ETweb.html"> home page</a></li>
-          <li id="second" class="listi"> <a href=""> games under 10$ </a></li>
+          <li id="second" class="listi"> <a class="dropbtn"> cheap games</a>
+          <div class="dropdown-content"> 
+              <a href="fgames.html">free games</a>
+              <a href="5geams.html">games under 5$</a>
+              <a href="10gemas.html">games under 10$</a>
+          </div>
+          </li>
           <li id="third" class="listi"> <a href="ex.html">exclusive games</a> </li>
-          <li id="fourth" class="listi"><a href="">multiplayer games</a>  </li>
-          <li id="fifth" class="listi" style="background-color: var(--a);"> <a href="trailers.html"> game trailers <br></a></li>
-          <li id="sixth" class="listi"> <a href=""> strategy games</a> </li>
+          <li id="fourth" class="listi"><a href="mgames.html">multiplayer games</a>  </li>
+          <li id="fifth" class="listi"> <a href="trailers.html"> game trailers <br></a></li>
+          <li id="sixth" class="listi"> <a href="sgames.html"> strategy games</a> </li>
           <li id="seventh" class="listi"> <a href="secondhand.html"> second hand consoles</a></li>
       </ol>
       </div>
