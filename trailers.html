@@ -54,26 +54,24 @@
     </div>
     </em></b>
     <div class="reco">
-      <marquee loop="infinite" scrollamount="20" direction="ltr"  style="width: fit-content; ">
-        <a href=""><img id="1" class="pics" src="hed1.jpg" alt=""></a> 
-        <a href=""> <img id="2" class="pics" src="hed2.jpg" alt=""></a>
-        <a href=""> <img id="3" class="pics" src="hed3.jpg" alt=""></a>
-        <a href=""><img id="4" class="pics" src="hed4.jpg" alt=""></a> 
-    </marquee>
+      <a href=""><img id="1" class="pics" src="hed1.jpg" alt=""></a> 
+      <a href=""> <img id="2" class="pics" src="hed2.jpg" alt=""></a>
+      <a href=""> <img id="3" class="pics" src="hed3.jpg" alt=""></a>
+      <a href=""><img id="4" class="pics" src="hed4.jpg" alt=""></a>
     </div>
    
     <div class="grid-container">
-      <div class="grid-item"> <video width="225" height="225" controls>
-        <source src="callofduty.mp4" type="video/mp4">
-      </video> <br> name:call of duty &nbsp; &nbsp;  &nbsp;price:60$
-           <br>  console:all &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;    made by:EA <br>
-           <button onclick="a()">BUY</button></div>
-      <div class="grid-item"><video width="225" height="225" controls>
+      <div class="grid-item"><video width="225" height="225" controls autoplay>
         <source src="battlefield.mp4" type="video/mp4">
       </video> <br> name:battlefield &nbsp; &nbsp;  &nbsp; price:60$
           <br> console:all &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; made by:EA <br>
           <button onclick="a()">BUY</button>
         </div>
+      <div class="grid-item"> <video width="225" height="225" controls >
+        <source src="callofduty.mp4" type="video/mp4">
+      </video> <br> name:call of duty &nbsp; &nbsp;  &nbsp;price:60$
+           <br>  console:all &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;    made by:EA <br>
+           <button onclick="a()">BUY</button></div>
       <div class="grid-item"><video width="225" height="225" controls>
         <source src="doom.mp4" type="video/mp4">
       </video> <br> name:doom &nbsp; &nbsp;&nbsp;price:free
@@ -118,10 +116,11 @@
   
     function a(){
         if (confirm("are you sure you want to buy this game")) {
-  txt = "Yes";
+
   alert("congratulations you have prechased the game")
+  window.location.replace("Etweb.html");
 } else {
-  txt = "no";
+
   alert("you have cancled the purchase")
 }
     }
